@@ -34,15 +34,14 @@ pipeline {
             }
         }
         stage('Deploy and smoke test') {
-                steps{
-                    sh 'chmod +x ./jenkins/scripts/*.sh'
-                    sh './jenkins/scripts/deploy.sh'
-                }
+            steps{
+                sh 'chmod +x ./jenkins/scripts/*.sh'
+                sh './jenkins/scripts/deploy.sh'
             }
-            stage('Cleanup') {
-                        steps{
-                            sh './jenkins/scripts/cleanup.sh'
-                        }
+        }
+        stage('Cleanup') {
+            steps{
+                sh './jenkins/scripts/cleanup.sh'
             }
         }
     }
