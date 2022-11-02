@@ -32,4 +32,5 @@ pipeline {
                 sh "docker image rm $registry:$BUILD_NUMBER"
             }
         }
+    }
 }
