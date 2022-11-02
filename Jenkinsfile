@@ -1,6 +1,7 @@
 pipeline {
     environment {
         registry = "s23136/back5tak1"
+        DOCKERHUB_CREDENTIALS = credentials('docker-login-pwd')
     }
     agent {
         docker {
