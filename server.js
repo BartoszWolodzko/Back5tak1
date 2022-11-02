@@ -23,3 +23,14 @@ app.get('/hobbies/:id', async (req, res) => {
     }
     res.send(hobby);
 })
+
+app.get('/hobbies/startingwith/:letter', async (req, res) => {
+    const letter = req.params.letter;
+    res.send(hobbies.getHobbyStartingWith(letter));
+})
+
+app.get('/hobbies/bylength/:length', async (req, res) => {
+    const length = req.params.length;
+    res.send(hobbies.getHobbyByLength(length));
+})
+

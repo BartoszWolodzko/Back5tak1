@@ -8,5 +8,14 @@ describe("API unit test suite", () => {
         it("returns 'jogging' as first hobby", () => {
             expect(list[0]).toBe("jogging");
         });
+        it("returns hobbies starting with 'd'", () => {
+            expect(list).toContain("diving");
+        });
+        it("returns hobbies with length 7", () => {
+            expect(list).toContain("cooking");
+            expect(list).toContain("jogging");
+            expect(list).toContain("reading");
+        });
     })
+
 })

@@ -9,3 +9,12 @@ exports.getHobby = id => {
         return null;
     return hobbies[id-1];
 }
+
+exports.getHobbyStartingWith = letter => {
+    return hobbies.filter(hobby => hobby.startsWith(letter));
+}
+
+exports.getHobbyByLength = length => {
+    return hobbies.filter(hobby => hobby.length == length);
+}
+
