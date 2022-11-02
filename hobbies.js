@@ -18,3 +18,4 @@ exports.getHobbyByLength = length => {
     return hobbies.filter(hobby => hobby.length == length);
 }
 
+//test if commit makes build fail
