@@ -11,6 +11,13 @@ docker network create test-net
 docker container run -d \
     --name api \
     --net test-net \
+    -p 3000:3000 \
+    $registry:$BUILD_NUMBER
+
+docker container run -d \
+    --name api \
+    --net test-net \
+    -p 3000:3000 \
     $registry:$BUILD_NUMBER
 
 # Logic to wait for the api component to be ready on port 3000
