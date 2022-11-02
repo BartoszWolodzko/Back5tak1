@@ -1,5 +1,5 @@
 {
-  "name": "Back5tak1",
+  "name": "back5tak1",
   "version": "1.0.0",
   "main": "server.js",
   "scripts": {
@@ -11,5 +11,16 @@
   },
   "devDependencies": {
     "jasmine": "^3.4.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BartoszWolodzko/Back5tak1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BartoszWolodzko/Back5tak1/issues"
+  },
+  "homepage": "https://github.com/BartoszWolodzko/Back5tak1#readme",
+  "description": ""
 }
